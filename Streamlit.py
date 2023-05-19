@@ -1,10 +1,10 @@
 import streamlit as st
 
-# Streamlitアプリケーションの構築
+# Streamlit Building Applications
 tweets_df = pd.DataFrame()
 st.write("# Twitter data scraping")
 option = st.selectbox('How would you like the data to be searched?',('Keyword', 'Hashtag'))
-word = st.text_input('Please enter a '+option, 'Elon Musk')
+word = st.text_input('Please enter a '+option, 'hogehoge')
 start = st.date_input("Select the start date", datetime.date(2022, 1, 1),key='d1')
 end = st.date_input("Select the end date", datetime.date(2023, 1, 1),key='d2')
 tweet_c = st.slider('How many tweets to scrape', 0, 1000, 5)
